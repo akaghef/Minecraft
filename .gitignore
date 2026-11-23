@@ -27,3 +27,4 @@ node_modules/
 .blockwright/
 .blockwright-store/
 .mcb/
+*.pid

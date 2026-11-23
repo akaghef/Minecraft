@@ -15,22 +15,22 @@
 | ツール | 導入・確認結果 | 限界・停止理由 |
 |---|---|---|
 | [Litematica](https://modrinth.com/mod/litematica) 0.15.4 / MaLiLib 0.16.3 | 1.20.1実クライアントでlitematic読込、配置登録、描画有効化、材料3種類・36個、検証GUIを確認。36個のブロック種別一致、欠損0、余分0 | 通電による15個のpower状態差を検出。無視設定で隠していない |
-| [AutoSchm](https://www.autoschm.net/) | 公式配布先を調査 | 公式サイトがAccount Suspendedへ転送され、取得不能。導入していない |
-| [AutoBuild](https://modrinth.com/mod/autobuild) 2.0.1+1.21.1 | 独立したFabric 1.21.1に導入。実プレイヤーでschem読込、材料一覧、速度指定、36ブロックの自動配置を実行。別のボット読取で全36種別と17個の赤石粉の信号強度を照合 | 1.20.1非対応。クライアント専用と扱わず、パック内ではside=both |
+| [AutoSchm](https://www.autoschm.net/) | 公式配布先を調査 | 見つかった配布サイトがAccount Suspendedへ転送され、取得不能。作者に結び付く正規の取得元を確定できず未導入 |
+| [AutoBuild](https://modrinth.com/mod/autobuild) 2.0.1+1.21.1 | 独立したFabric 1.21.1に導入。実プレイヤーでschem読込、材料一覧、速度指定、一時停止・再開、undo、36ブロックの自動配置を実行。別のボット読取で全36種別と17個の赤石粉の信号強度を照合 | 1.20.1非対応。クライアント専用と扱わず、パック内ではside=both |
 | [WorldEdit](https://modrinth.com/plugin/worldedit) 7.2.15 | 1.20.1実ワールドでAPI経由の設置、schem保存・読込・貼付、読み戻しを確認。生成配線の通電も確認 | FAWE/Paperへの置換はしていない |
-| [Applied Automata](https://www.curseforge.com/minecraft/mc-mods/applied-automata) 1.0.1 | NeoForge 1.21.1・AE2 19.2.20・GuideME・Rhinoで起動。station読込、ME drive接続・給電、材料投入、ドローン建築開始まで確認 | 36ブロックの入力に対し19タスクとなり、1個だけのはずのredstone blockを追加要求して停止。投入したstone18・redstone17が残り、redstone block1だけ消費された。元のschematicどおりの完成を確認できず不合格。原因は未確定 |
+| [Applied Automata](https://www.curseforge.com/minecraft/mc-mods/applied-automata) 1.0.1 | NeoForge 1.21.1・AE2 19.2.20・GuideME・Rhinoで起動。station読込、ME drive接続・給電、材料投入、ドローン建築開始まで確認 | 36ブロックの入力に対し19タスクとなり、1個だけのはずのredstone blockを追加要求して停止。投入したstone18・redstone17が残り、redstone block1だけ消費された。元のschematicどおりの完成を確認できず不合格。[再現条件と観測値](../verification/applied-automata-case.json)。原因は未確定 |
 | [Lite2Edit](https://github.com/Erik-Donath/Lite2Edit) 1.0 | 1.21.1 WorldEditへlitematica形式が登録された。litematicを読込→schem保存し、nucleationで全36ブロック状態が元と一致 | 1.20.1非対応 |
 | [WorldAPI](https://github.com/MairwunNx/minecraft-worldapi) 4.6.1 | Fabric 26.3で起動。HTTP設置→読取→undo→元のairへ戻ったことを確認。公式minecraft-mcp 5.0.0の認証済み45ツール、状態取得・ブロック読取も確認 | 26.3の結果は1.20.1回路の互換性証明ではない。HTTPは127.0.0.1へ変更 |
 | [AutoJS](https://github.com/MerrySnow404/AutoJS) 1.0.1 | Fabric 1.20.1 / NeoForge 1.21.1でMCPを確認。設置・読取・撤去、ゲーム状態・GUIの取得、他Modの実API呼出しを確認 | 配布元の指示によりModパックへ同梱せずローカル個別導入 |
 | [Forge AI Bridge](https://www.curseforge.com/minecraft/mc-mods/forge-ai-bridge) | 公式対応環境・ファイルを特定 | JARダウンロードがHTTP 403。未導入 |
-| [Blockpal AI](https://www.curseforge.com/minecraft/mc-mods/blockpal-ai) 3.27.0 | Fabric 26.2で起動。外部AI自動接続をMCPモードへ切替。localhostのMCP listenerを確認 | コンパニオンの自律建築は未検証。外部の無料AIサービスによる試験は実行していない |
+| [Blockpal AI](https://www.curseforge.com/minecraft/mc-mods/blockpal-ai) 3.27.0 | Fabric 26.2で起動。外部AI自動接続をMCPモードへ切替。localhostの認証付きMCPを初期化し14ツールを確認 | 認証済みlist_botsの実応答を確認。コンパニオンの自律建築は未検証。外部の無料AIサービスによる試験は実行していない |
 | [RemoteControllerMod](https://github.com/takecx/RemoteControllerMod) 1.1.0+1.20.1 | 配布JARを取得し、Forge 47系依存を確認 | 公式Forge installer取得がHTTP 403。ロード・操作は未検証 |
 | Project Red / Simply Redstone Systems / Automated Redstone | 導入しない | 追加回路素子・信号規則の変更を今回の計算機に使わないという制約による |
 | [mcschematic](https://github.com/Sloimayyy/mcschematic) 11.4.4 | 36ブロックのschemを生成。WorldEdit・AutoBuild・mcbから実配置 | CORDICの全ブロック配置を生成したものではない |
 | [nucleation](https://github.com/Schem-at/Nucleation) 0.12.4 | Python 3.12のmacOS wheelで導入。schem→litematic→読戻し36状態一致、SchemConvert/Lite2Editの結果との照合 | Python 3.11ではソースビルドになり古いCargoで失敗したため3.12を使用。回路シミュレーターの同等性は未認定 |
 | [SchemConvert](https://github.com/PiTheGuy/SchemConvert) 1.2.6 | mcschematicのschem→litematic→schemで36状態一致 | nucleation生成のlitematicを入力すると変換エラー。この組合せは不合格のまま記録 |
 | [mctools](https://pypi.org/project/mctools/) 1.4.1 | RCON認証・設置・撤去。独立したAutoJSで設置後stone、撤去後airを確認 | loopbackのテストサーバーのみ |
-| [blockwright](https://github.com/ThatHunky/blockwright) | ソースから依存導入・ビルド、MCP初期化と22ツールを確認 | 1.20.1の`server_info`でRCON connection closed。同じサーバーでmctoolsは成功。上流RCON実装はコマンド直後にsentinelを送る。互換性修正が必要。独自の代替サーバーや判定変更は加えていない |
+| [blockwright](https://github.com/ThatHunky/blockwright) | ソースから依存導入・ビルド、MCP初期化と22ツールを確認 | 1.20.1の`server_info`でRCON connection closed。同じサーバーでmctoolsは成功。上流RCON実装はコマンド直後にsentinelを送るが、接続切断との因果は未確定。互換性調査・修正が必要。独自の代替サーバーや判定変更は加えていない |
 | [minecraft-agent](https://github.com/justjavac/minecraft-agent) 1.0.8 | loopbackの専用ボット用サーバーへ接続、状態・位置・移動・ブロック状態取得。AutoBuild結果の全36ブロックを読み戻した | オフライン認証は新規のローカル試験環境のみ。既存環境の認証設定は維持 |
 | [MC-CLI](https://github.com/Th0rgal/mc-cli) 1.6.0 | Fabric 26.3を無音ヘッドレス起動。ワールド作成、状態取得、PNG capture、設置・ブロック読取・撤去を確認 | 旧1.20.1環境へは混在させていない |
 | [mineflare-cli](https://github.com/eastlondoner/mineflare-cli) 1.4.5 | macOS arm64配布物・CLIを取得。Bunを導入し公式ソース実行も試行 | 配布物が開発元の絶対パスのbot-process.jsを参照して失敗。ソース版もspawn後healthのbotConnected=false、state HTTP 400で未合格。停止済み |
@@ -47,7 +47,7 @@
 
 ## 数値資産
 
-復元済みMATLABソースをコピーし、観測コード2本の個人環境の絶対パスだけを環境変数`MINECRAFT_FUNCTIONS_DIR`へ変更した。元のファイルは変更していない。`calc_time.m`の既知の構文・変数名問題は修正済みと主張していない。MATLABの新規ログインや再起動は行っていない。
+復元済みMATLABソースをコピーし、観測コード2本の個人環境の絶対パスだけを環境変数`MINECRAFT_FUNCTIONS_DIR`へ変更した。公開コピーの末尾空白も整形した。元のファイルは変更していない。`calc_time.m`の既知の構文・変数名問題は修正済みと主張していない。MATLABの新規ログインや再起動は行っていない。
 
 C++誤差探索を再コンパイル・実行し、Python Decimal照合も再実行した。モデルの最大絶対誤差は約8e-11。これはモデルと浮動小数点ガードを含む数値監査であり、実ゲームのCORDIC出力や厳密な形式証明ではない。
 

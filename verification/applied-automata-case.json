@@ -1,0 +1,30 @@
+{
+  "input": "build/schematic-smoke/java.litematic",
+  "producer": "mcschematic 11.4.4 -> SchemConvert 1.2.6",
+  "input_blocks": 36,
+  "input_materials": {
+    "minecraft:stone": 18,
+    "minecraft:redstone": 17,
+    "minecraft:redstone_block": 1
+  },
+  "environment": {
+    "minecraft": "1.21.1",
+    "loader": "NeoForge 21.1.234",
+    "applied_automata": "1.0.1",
+    "ae2": "19.2.20",
+    "power": "AE2 creative energy cell"
+  },
+  "observed": {
+    "state": "BUILDING",
+    "total": 19,
+    "remaining": 18,
+    "task": "Missing Item: Block of Redstone",
+    "stock": [
+      18,
+      0,
+      17
+    ],
+    "placed": "Block{minecraft:redstone_block}"
+  },
+  "verdict": "failed: the supplied mixed schematic did not complete with the specified materials; cause not established"
+}

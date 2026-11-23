@@ -19,6 +19,8 @@ Project Red、Simply Redstone Systems、Automated Redstoneなどの追加回路�
 | `docs/verification.md` | 導入結果、実動作の範囲、失敗・未検証 |
 | `.local/` | ローカル専用のインスタンス・依存ツール・秘密情報。Git対象外 |
 
+[導入済み環境の起動・再現手順](docs/setup.md)を参照。
+
 ## まず試す
 
 Python 3.12、Java 17/21/25を用途ごとに使う。1.20.1はJava 17、1.21.1はJava 21、26.xはJava 25。

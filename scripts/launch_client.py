@@ -11,7 +11,7 @@ import sys
 from minecraft_launcher_lib.command import get_minecraft_command
 
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument("version", choices=["1.20.1", "1.21.1", "26.3"])
+parser.add_argument("version", choices=["1.20.1", "1.21.1", "26.2", "26.3"])
 parser.add_argument("--java", required=True, help="Java executable for this Minecraft version")
 args = parser.parse_args()
 root = Path(__file__).resolve().parents[1]
