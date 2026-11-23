@@ -1,0 +1,63 @@
+{
+  "minecraft_reference": "1.20.1",
+  "signal_strength_range": [
+    0,
+    15
+  ],
+  "baseline_dust_power": [
+    15,
+    14,
+    13,
+    12,
+    11,
+    10,
+    9,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0,
+    0
+  ],
+  "autobuild_readback_blocks": 36,
+  "autobuild_readback_dust_states": 17,
+  "litematica": {
+    "finished": true,
+    "schematic": 36,
+    "real": 36,
+    "missing": 0,
+    "extra": 0,
+    "wrongBlocks": 0,
+    "wrongStates": 15,
+    "correct": 21,
+    "unseen": 0
+  },
+  "worldapi": {
+    "set_and_read": true,
+    "undo_and_read": true,
+    "before": "minecraft:air",
+    "after": "minecraft:air"
+  },
+  "rcon": {
+    "set_read_remove_read": true
+  },
+  "mcschematic_nucleation_roundtrip_differences": 0,
+  "schemconvert_roundtrip_differences": 0,
+  "lite2edit_roundtrip_differences": 0,
+  "hdl_fixture": "Amaranth -> Verilog -> Yosys -> Icarus: XOR 4 input vectors",
+  "kind": "Tooling diagnostics; not CORDIC hardware acceptance",
+  "blockpal": {
+    "minecraft": "26.2",
+    "mcp_tools": 14,
+    "summon_select_observe_inventory_stop": true,
+    "script_orientation_changed": true,
+    "integer_position_changed_after_short_walk": false,
+    "autonomous_build_verified": false,
+    "voice_input": false,
+    "voice_output": false
+  }
+}

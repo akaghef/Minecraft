@@ -29,6 +29,12 @@ game.mkdir(parents=True, exist_ok=True)
 options = game / "options.txt"
 lines = options.read_text().splitlines() if options.exists() else []
 options.write_text("\n".join(line for line in lines if not line.startswith("soundCategory_master:")) + "\nsoundCategory_master:0.0\n")
+blockpal = game / "config/blockpal/config.json"
+if blockpal.exists():
+    config = json.loads(blockpal.read_text())
+    config["voiceResponses"] = False
+    config["allowVoice"] = False
+    blockpal.write_text(json.dumps(config, indent=2) + "\n")
 loader = "0.18.4" if args.version == "1.20.1" else "0.20.1"
 opts = {"username": profile["name"], "uuid": profile["id"], "token": active.get("accessToken", ""),
         "gameDirectory": str(game), "executablePath": args.java,

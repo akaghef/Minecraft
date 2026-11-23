@@ -8,7 +8,7 @@
 
 [Minecraft Redstone MCP](https://github.com/dylan121322/minecraft-redstone-mcp)はMCP起動・36ツールの取得・ボット接続まで成功した。しかし現行の`mcp-server/scripts/nucleation_bridge.py`の`main()`は`simulate_logic()`を呼び、`simulation_type=logic`を返す。ブロックの接続・伝搬遅延の検証になっていない。未知の論理ゲート等では期待値をactualへ代入する経路もある。
 
-同じNOT回路について、トーチを残したケースと除去したケースの**両方がpassed=true**になった。[再現入力と結果](../verification/redstone-mcp-counterexample.json)を保存した。この合格表示を回路の正しさの証拠に採用しない。回路検証用のCodex接続としても有効化していない。必要な修正は、実ブロックシミュレーションを実行し、未対応や実行失敗を不合格として返すこと。期待値からの出力生成を検証経路から除くこと。
+同じNOT回路について、トーチを残したケースと除去したケースの**両方がpassed=true**になった。さらに実際の1.20.1でトーチなしの回路を配置すると、入力0/1の両方で出力信号強度0だった。期待されたNOTの出力と実配線の出力を区別できない。[再現入力と結果](../verification/redstone-mcp-counterexample.json)を保存した。この合格表示を回路の正しさの証拠に採用しない。回路検証用のCodex接続としても有効化していない。必要な修正は、実ブロックシミュレーションを実行し、未対応や実行失敗を不合格として返すこと。期待値からの出力生成を検証経路から除くこと。
 
 ## ツール別の確認範囲
 
@@ -23,7 +23,7 @@
 | [WorldAPI](https://github.com/MairwunNx/minecraft-worldapi) 4.6.1 | Fabric 26.3で起動。HTTP設置→読取→undo→元のairへ戻ったことを確認。公式minecraft-mcp 5.0.0の認証済み45ツール、状態取得・ブロック読取も確認 | 26.3の結果は1.20.1回路の互換性証明ではない。HTTPは127.0.0.1へ変更 |
 | [AutoJS](https://github.com/MerrySnow404/AutoJS) 1.0.1 | Fabric 1.20.1 / NeoForge 1.21.1でMCPを確認。設置・読取・撤去、ゲーム状態・GUIの取得、他Modの実API呼出しを確認 | 配布元の指示によりModパックへ同梱せずローカル個別導入 |
 | [Forge AI Bridge](https://www.curseforge.com/minecraft/mc-mods/forge-ai-bridge) | 公式対応環境・ファイルを特定 | JARダウンロードがHTTP 403。未導入 |
-| [Blockpal AI](https://www.curseforge.com/minecraft/mc-mods/blockpal-ai) 3.27.0 | Fabric 26.2で起動。外部AI自動接続をMCPモードへ切替。localhostの認証付きMCPを初期化し14ツールを確認 | 認証済みlist_botsの実応答を確認。コンパニオンの自律建築は未検証。外部の無料AIサービスによる試験は実行していない |
+| [Blockpal AI](https://www.curseforge.com/minecraft/mc-mods/blockpal-ai) 3.27.0 | Fabric 26.2で起動。外部AI自動接続をMCPモードへ切替。localhostの認証付きMCPを初期化し14ツールを確認。実プレイヤーから召喚し、選択・観測・持ち物取得・スクリプトによる向き変更・停止を確認。音声出力と音声入力も無効化 | 短い歩行スクリプト後の整数座標は不変で、移動成功とは認定していない。コンパニオンの自律建築は未検証。外部の無料AIサービスによる試験は実行していない |
 | [RemoteControllerMod](https://github.com/takecx/RemoteControllerMod) 1.1.0+1.20.1 | 配布JARを取得し、Forge 47系依存を確認 | 公式Forge installer取得がHTTP 403。ロード・操作は未検証 |
 | Project Red / Simply Redstone Systems / Automated Redstone | 導入しない | 追加回路素子・信号規則の変更を今回の計算機に使わないという制約による |
 | [mcschematic](https://github.com/Sloimayyy/mcschematic) 11.4.4 | 36ブロックのschemを生成。WorldEdit・AutoBuild・mcbから実配置 | CORDICの全ブロック配置を生成したものではない |
@@ -60,3 +60,5 @@ C++誤差探索を再コンパイル・実行し、Python Decimal照合も再実
 このプロジェクトだけをCodexのtrusted projectへ登録し、`codex mcp get minecraft_worldapi --json`でプロジェクト設定が読み込まれることを確認した。Skillはこのプロジェクトの`.agents/skills/`へ導入済みで、次にこのプロジェクトを開いたターンから利用できる。
 
 追跡ファイルと全Git履歴を連絡先・資格情報検査の対象にする。第三者ソース・JAR・アカウント情報・ワールド・実行ログ・キャッシュ・ローカルMCP試験設定はGit対象外。画像は公開する場合に実際のピクセルを確認する。
+
+今回起動した診断用ワールドは保存し、テスト用クライアント・サーバー・ボットを停止した。導入物と診断用ワールドはGit対象外の`.local/`へ保持し、再起動手順を`docs/setup.md`へ記載した。

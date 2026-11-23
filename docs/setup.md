@@ -21,10 +21,11 @@ python scripts/install_modpacks.py 1.21.1
 ```sh
 python scripts/launch_client.py 1.20.1 --java /path/to/java17/bin/java
 python scripts/launch_client.py 1.21.1 --java /path/to/java21/bin/java
+python scripts/launch_client.py 26.2 --java /path/to/java25/bin/java
 python scripts/launch_client.py 26.3 --java /path/to/java25/bin/java
 ```
 
-ゲーム音は0。MC-CLI導入版はヘッドレスになる。1.20.1/1.21.1のゲームディレクトリは`.local/instances/fabric-<version>/`。既存の普段のゲームディレクトリを上書きしない。
+ゲーム音は0。Blockpalの音声出力・音声入力も無効にする。MC-CLI導入版はヘッドレスになる。1.20.1/1.21.1のゲームディレクトリは`.local/instances/fabric-<version>/`。既存の普段のゲームディレクトリを上書きしない。
 
 ## 今回の専用サーバーを再起動
 
