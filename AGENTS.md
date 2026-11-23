@@ -10,6 +10,8 @@ Keep installation binaries, game instances, account files, tokens, logs, worlds 
 
 Use upstream tools without replacing their internals. Record blocked and untested capabilities honestly. Downloaded is not loaded; loaded is not functionally verified.
 
+Run checks only for the work the human explicitly asked to verify. Do not expand verification to adjacent work, publication, documentation or unrelated components, and do not repeat completed checks without a new verification request. Do not dispatch GitHub Actions or wait for remote checks unless explicitly requested. Keep the existing verification workflow manual-only; publishing a change must not trigger a remote verification run.
+
 AutoJS is installed separately for local debugging. Do not include it in exported modpacks. Keep bridges on loopback. Preserve original worlds and MATLAB sources.
 
 Before recommending or launching a calculator profile, inspect its actual game directory and version. A matching display name/version does not prove the profile is usable. Operate only on a verified world copy in an isolated instance; record source hashes before copying, verify the copy, and check source hashes after the run. Never launch the original saves directory for verification. Keep the unmodified copy and source manifest in ignored local storage. A launcher repair is intermediate: resume the authorized circuit verification after confirming launch.
