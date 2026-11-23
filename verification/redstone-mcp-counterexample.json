@@ -1,0 +1,292 @@
+{
+  "purpose": "Negative control: missing torch must invalidate the physical NOT circuit",
+  "upstream": "https://github.com/dylan121322/minecraft-redstone-mcp",
+  "cases": [
+    {
+      "torch_present": true,
+      "input": {
+        "circuit": {
+          "name": "NOT Gate",
+          "category": "logic_gate",
+          "dimensions": {
+            "width": 3,
+            "height": 2,
+            "depth": 1
+          },
+          "inputs": [
+            {
+              "label": "A",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "direction": "west"
+            }
+          ],
+          "outputs": [
+            {
+              "label": "Q",
+              "pos": [
+                2,
+                1,
+                0
+              ],
+              "direction": "east"
+            }
+          ],
+          "truth_table": [
+            {
+              "A": 0,
+              "Q": 1
+            },
+            {
+              "A": 1,
+              "Q": 0
+            }
+          ],
+          "blocks": [
+            {
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "block": "minecraft:redstone_wire"
+            },
+            {
+              "pos": [
+                1,
+                0,
+                0
+              ],
+              "block": "minecraft:stone"
+            },
+            {
+              "pos": [
+                1,
+                1,
+                0
+              ],
+              "block": "minecraft:redstone_torch[lit=true]"
+            },
+            {
+              "pos": [
+                2,
+                0,
+                0
+              ],
+              "block": "minecraft:stone"
+            },
+            {
+              "pos": [
+                2,
+                1,
+                0
+              ],
+              "block": "minecraft:redstone_wire"
+            }
+          ]
+        },
+        "test_vectors": [
+          {
+            "inputs": {
+              "A": 0
+            },
+            "expected": {
+              "Q": 1
+            }
+          },
+          {
+            "inputs": {
+              "A": 1
+            },
+            "expected": {
+              "Q": 0
+            }
+          }
+        ],
+        "ticks": 40
+      },
+      "result": {
+        "passed": true,
+        "circuit_name": "NOT Gate",
+        "category": "logic_gate",
+        "results": [
+          {
+            "inputs": {
+              "A": 0
+            },
+            "expected": {
+              "Q": 1
+            },
+            "actual": {
+              "Q": 1
+            },
+            "match": true,
+            "delay_ticks": 0
+          },
+          {
+            "inputs": {
+              "A": 1
+            },
+            "expected": {
+              "Q": 0
+            },
+            "actual": {
+              "Q": 0
+            },
+            "match": true,
+            "delay_ticks": 0
+          }
+        ],
+        "timing": {
+          "propagation_delay_ticks": 0,
+          "block_count": 5
+        },
+        "errors": [],
+        "warnings": [],
+        "simulation_type": "logic"
+      }
+    },
+    {
+      "torch_present": false,
+      "input": {
+        "circuit": {
+          "name": "NOT Gate",
+          "category": "logic_gate",
+          "dimensions": {
+            "width": 3,
+            "height": 2,
+            "depth": 1
+          },
+          "inputs": [
+            {
+              "label": "A",
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "direction": "west"
+            }
+          ],
+          "outputs": [
+            {
+              "label": "Q",
+              "pos": [
+                2,
+                1,
+                0
+              ],
+              "direction": "east"
+            }
+          ],
+          "truth_table": [
+            {
+              "A": 0,
+              "Q": 1
+            },
+            {
+              "A": 1,
+              "Q": 0
+            }
+          ],
+          "blocks": [
+            {
+              "pos": [
+                0,
+                0,
+                0
+              ],
+              "block": "minecraft:redstone_wire"
+            },
+            {
+              "pos": [
+                1,
+                0,
+                0
+              ],
+              "block": "minecraft:stone"
+            },
+            {
+              "pos": [
+                2,
+                0,
+                0
+              ],
+              "block": "minecraft:stone"
+            },
+            {
+              "pos": [
+                2,
+                1,
+                0
+              ],
+              "block": "minecraft:redstone_wire"
+            }
+          ]
+        },
+        "test_vectors": [
+          {
+            "inputs": {
+              "A": 0
+            },
+            "expected": {
+              "Q": 1
+            }
+          },
+          {
+            "inputs": {
+              "A": 1
+            },
+            "expected": {
+              "Q": 0
+            }
+          }
+        ],
+        "ticks": 40
+      },
+      "result": {
+        "passed": true,
+        "circuit_name": "NOT Gate",
+        "category": "logic_gate",
+        "results": [
+          {
+            "inputs": {
+              "A": 0
+            },
+            "expected": {
+              "Q": 1
+            },
+            "actual": {
+              "Q": 1
+            },
+            "match": true,
+            "delay_ticks": 0
+          },
+          {
+            "inputs": {
+              "A": 1
+            },
+            "expected": {
+              "Q": 0
+            },
+            "actual": {
+              "Q": 0
+            },
+            "match": true,
+            "delay_ticks": 0
+          }
+        ],
+        "timing": {
+          "propagation_delay_ticks": 0,
+          "block_count": 4
+        },
+        "errors": [],
+        "warnings": [],
+        "simulation_type": "logic"
+      }
+    }
+  ]
+}

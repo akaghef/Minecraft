@@ -1,0 +1,11 @@
+name = "autobuild"
+filename = "autobuild-2.0.1+1.21.1.jar"
+side = "both"
+pin = true
+[download]
+url = "https://cdn.modrinth.com/data/wzBO46L7/versions/wDp2vq7c/autobuild-2.0.1%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "6d9b20ee7f5abeefa723cee6ecad2d5a0ba34ad30cc4904b6848a9ca7b9ebe8504d6b362b168946e25992e667354838957baebf6e9c3b9080813835cafb08262"
+[update.modrinth]
+mod-id = "wzBO46L7"
+version = "wDp2vq7c"

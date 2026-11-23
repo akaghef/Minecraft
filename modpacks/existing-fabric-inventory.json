@@ -1,0 +1,98 @@
+{
+  "minecraft": "1.20.1",
+  "purpose": "Inventory of the pre-existing installation; not activated in the isolated baseline",
+  "mods": [
+    {
+      "filename": "LotTweaks-mc1.20.1-fabric-2.3.4.jar",
+      "sha512": "c6ef8393fff7dad7fd6bd3101de1ac76d34473d3c9af4abd2f2d74be1f05c9874b6d4275bd05027e18dc5e206f415e65afce28ed477ef031aeec68c0b39c5e85"
+    },
+    {
+      "filename": "WorldEditCUI-1.20+01.jar",
+      "sha512": "69bc3930d79b440ce39e135739970ce9e94fa0aea9fb10b0a4b136b0983f5e8a691d926c9d693c905a6f1822a32564bfd5127056acb14a7d9082862e840cd88c",
+      "version": "1.20+01",
+      "project_id": "NSLJJooQ",
+      "source_url": "https://cdn.modrinth.com/data/NSLJJooQ/versions/2tNTyKzy/WorldEditCUI-1.20%2B01.jar"
+    },
+    {
+      "filename": "XrayMod-2.3.1.jar",
+      "sha512": "1fb6df7c07e6632ba988bda4995178ca4eb02e9ea5cfa737135eb7155020f3f92e1a6a40d8c707451279a6af1f38baf8d45b28e0d3bd58003f823363ea88a0b0"
+    },
+    {
+      "filename": "cmdkeybind-1.6.3-1.20.jar",
+      "sha512": "55a13b9310118234b897f9f28d3bb681c09cde25e2d8df7808573df89bcf2365ab76f31d1220701b49acfa2620785be8b69d73cab6e63b52f81deaadae688bdf",
+      "version": "1.6.3-1.20",
+      "project_id": "h3r1moh7",
+      "source_url": "https://cdn.modrinth.com/data/h3r1moh7/versions/snLr0hHP/cmdkeybind-1.6.3-1.20.jar"
+    },
+    {
+      "filename": "fabric-api-0.91.0+1.20.1.jar",
+      "sha512": "cc8d87b50e1db9df4715f4194e85f3f80f0c816d1636f19d9a31fd4608203c588720318d9659f066a5ebc1ae5f9a2dc7a5f37bb78fef28fc51b9765a42f91147",
+      "version": "0.91.0+1.20.1",
+      "project_id": "P7dR8mSH",
+      "source_url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/YblXfKtI/fabric-api-0.91.0%2B1.20.1.jar"
+    },
+    {
+      "filename": "fabric-carpet-1.20-1.4.112+v230608.jar",
+      "sha512": "bf9060e6b1d30d676d9efd30369ccb5baef164fc2d87aad7c7a19d2d9265b5d1d328428a308bdd15960a26bfe46dcd823a236c39f4e26474847354337b043c51",
+      "version": "1.4.112",
+      "project_id": "TQTTVgYE",
+      "source_url": "https://cdn.modrinth.com/data/TQTTVgYE/versions/K0Wj117C/fabric-carpet-1.20-1.4.112%2Bv230608.jar"
+    },
+    {
+      "filename": "iris-1.7.0+mc1.20.1.jar",
+      "sha512": "b02919e950102b77eb9f2908f8afa8b77af4b21381faf7c32c1b8a2efda3ca95acd21c940fe617165c3670ecc091c4f5034934e02ddec592f29c2c6cf85560f8",
+      "version": "1.7.0+1.20.1",
+      "project_id": "YL57xq9U",
+      "source_url": "https://cdn.modrinth.com/data/YL57xq9U/versions/KHQ2Hnpt/iris-1.7.0%2Bmc1.20.1.jar"
+    },
+    {
+      "filename": "litematica-fabric-1.20.1-0.15.3.jar",
+      "sha512": "788a4cd7728a71fa9f10c0ffbcad9b24a57689f1a3ef30c88bac43ede5120cf8b559c47cdd0794d8124467a90fc21f61e7b72255c7b1b973c6acbd95acd8ac63",
+      "version": "0.15.3",
+      "project_id": "bEpr0Arc",
+      "source_url": "https://cdn.modrinth.com/data/bEpr0Arc/versions/WAqDs1Yk/litematica-fabric-1.20.1-0.15.3.jar"
+    },
+    {
+      "filename": "lithium-fabric-mc1.20.1-0.11.2.jar",
+      "sha512": "d1b5c90ba8b4879814df7fbf6e67412febbb2870e8131858c211130e9b5546e86b213b768b912fc7a2efa37831ad91caf28d6d71ba972274618ffd59937e5d0d",
+      "version": "mc1.20.1-0.11.2",
+      "project_id": "gvQqBUqZ",
+      "source_url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/ZSNsJrPI/lithium-fabric-mc1.20.1-0.11.2.jar"
+    },
+    {
+      "filename": "malilib-fabric-1.20.1-0.16.1.jar",
+      "sha512": "d0db107447edfdd3918ab0af209acc02581fdcd49cd8ccf3a86d2c13264340f4116a5a8fecdf0087f246713739062438d18db887856b7e7b354040857f25f6bf",
+      "version": "0.16.1",
+      "project_id": "GcWjdA9I",
+      "source_url": "https://cdn.modrinth.com/data/GcWjdA9I/versions/OEchuJwf/malilib-fabric-1.20.1-0.16.1.jar"
+    },
+    {
+      "filename": "modmenu-7.2.2.jar",
+      "sha512": "9a7837e04bb34376611b207a3b20e5fe1c82a4822b42929d5b410809ec4b88ff3cac8821c4568f880775bafa3c079dfc7800f8471356a4046248b12607e855eb",
+      "version": "7.2.2",
+      "project_id": "mOgUt4GM",
+      "source_url": "https://cdn.modrinth.com/data/mOgUt4GM/versions/lEkperf6/modmenu-7.2.2.jar"
+    },
+    {
+      "filename": "sodium-fabric-0.5.8+mc1.20.1.jar",
+      "sha512": "313c281c5b08b100521a0eabd969d453617904a9a6e70ed03a0a9d1ac7dae0baa91afe1c18b372a9d229b3b3c1a0fa456e17d8b864a9ac557808f666c75d1213",
+      "version": "mc1.20.1-0.5.8",
+      "project_id": "AANobbMI",
+      "source_url": "https://cdn.modrinth.com/data/AANobbMI/versions/mhZtY2lR/sodium-fabric-0.5.8%2Bmc1.20.1.jar"
+    },
+    {
+      "filename": "tweakeroo-fabric-1.20.1-0.17.1.jar",
+      "sha512": "7dfab4369dbb76b716829cff3298ccdcd14666e400449ef87bbeed998d074508c1b92d311b812c4514b07dc9c58588bc3be6841c4281c91467bad7dcf471feb0",
+      "version": "0.17.1",
+      "project_id": "t5wuYk45",
+      "source_url": "https://cdn.modrinth.com/data/t5wuYk45/versions/mb6K7CK1/tweakeroo-fabric-1.20.1-0.17.1.jar"
+    },
+    {
+      "filename": "worldedit-mod-7.2.15.jar",
+      "sha512": "2c41dcd9a622f948ed5409eecc485018fbf274945bdd1a9c0fdf4c4954f9a47dc311e6e0f9e445180d8b771e4a40947533d67bd66feb4ab8c8f87c2880dba7ef",
+      "version": "7.2.15",
+      "project_id": "1u6JkXh5",
+      "source_url": "https://cdn.modrinth.com/data/1u6JkXh5/versions/Wrlqaul6/worldedit-mod-7.2.15.jar"
+    }
+  ]
+}

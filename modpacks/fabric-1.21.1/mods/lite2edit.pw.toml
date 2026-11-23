@@ -1,0 +1,11 @@
+name = "lite2edit"
+filename = "lite2edit-1.0.jar"
+side = "both"
+pin = true
+[download]
+url = "https://cdn.modrinth.com/data/4OeutdDa/versions/V1sjPtjI/lite2edit-1.0.jar"
+hash-format = "sha512"
+hash = "dbcad1609936d12bcbad1f74aef601a951fb0f219a99b41da1c1d60ceb7858b670a36aeb2de616f44d8259157d325ce0087d50fafe20a033d1219c779f093cdd"
+[update.modrinth]
+mod-id = "4OeutdDa"
+version = "V1sjPtjI"

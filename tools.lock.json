@@ -1,0 +1,66 @@
+{
+  "verified_on": "2026-11-23",
+  "python": {
+    "nucleation": "0.12.4",
+    "mcschematic": "11.4.4",
+    "mctools": "1.4.1",
+    "minecraft-structure-mcp": "0.5.0"
+  },
+  "npm": {
+    "minecraft-agent": "1.0.8",
+    "awesome-mineflayer-mcp": "1.3.2",
+    "@mairwunnx/minecraft-mcp": "5.0.0",
+    "bun": "1.4.5"
+  },
+  "sources": [
+    {
+      "repository": "https://github.com/github/awesome-copilot",
+      "commit": "f10fdb8b2660ce85c98f220b2f1ca24653768a5c"
+    },
+    {
+      "repository": "https://github.com/yuniko-software/minecraft-mcp-server",
+      "commit": "240c8cec337ce152cc9e058ebdef511055808406"
+    },
+    {
+      "repository": "https://github.com/3-03/minecraft-builder-mcp",
+      "commit": "9bc11ff5bbfdda7d7012acd06ba79f91b937f5f1"
+    },
+    {
+      "repository": "https://github.com/WebitroHQ/minecraft-structure-mcp",
+      "commit": "cfcbc0a7a12201572705438a6caa28e7c01bc506"
+    },
+    {
+      "repository": "https://github.com/wzhaoMS/minecraft-builder-skill",
+      "commit": "b389252c0cc07a673677f818622b50dda578228b"
+    },
+    {
+      "repository": "https://github.com/G0Osey99/awesome-mineflayer-mcp",
+      "commit": "89a407ca18a4a39196c6ebe726d5208cff88a9e5"
+    },
+    {
+      "repository": "https://github.com/lightningreflex/mcclaude",
+      "commit": "c6c1469d6a58ceb1a1a2f1ffc8d9c8b580ce8bed"
+    },
+    {
+      "repository": "https://github.com/dylan121322/minecraft-redstone-mcp",
+      "commit": "70f93081d93a696f03398f3cf7510eee12106d8a"
+    }
+  ],
+  "binaries": [
+    {
+      "file": "SchemConvert.jar",
+      "sha256": "f836c2b7a92bf350b5cc64ef6c8d2881e18e8ead2e4628f24e116084e1b3d931",
+      "source": "https://github.com/PiTheGuy/SchemConvert/releases"
+    },
+    {
+      "file": "mineflare.tar.gz",
+      "sha256": "75a7f1e74e4c95759dbfd73d9270124aa02c3ae615553dd8f441c22d9fb37c1b",
+      "source": "https://github.com/eastlondoner/mineflare-cli/releases"
+    },
+    {
+      "file": "mccli-fabric-26.3-1.6.0.jar",
+      "sha256": "1b31fd34bc7c104470ec1f5bc7460199f1a085259abe8f820ea876bd4b8d1d5c",
+      "source": "https://github.com/Th0rgal/mc-cli/releases"
+    }
+  ]
+}

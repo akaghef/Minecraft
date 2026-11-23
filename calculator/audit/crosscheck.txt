@@ -1,0 +1,9 @@
+High-precision constants match C++: 25 angles plus initial gain
+Minimum half-rounding margin: 0.0017227752593010730746097851345254054904385170818856461653116
+Nine-step interval boundaries match individual sign updates
+Five prior MATLAB results agree to the fixed-point unit
+cordic_latest sin angle 1.145931691295100 model 0.019998947733 reference 0.01999894765317769 abs error 7.9822307450e-11
+cordic_latest cos angle 88.854068308694906 model 0.019998947733 reference 0.01999894765335209 abs error 7.9647914130e-11
+cordic_error sin angle 1.145931691295100 model 0.019998947733 reference 0.01999894765317769 abs error 7.9822307450e-11
+cordic_error cos angle 88.854068308694906 model 0.019998947733 reference 0.01999894765335209 abs error 7.9647914130e-11
+Uniform model support half-width 1E-10 standard deviation 1.3613718571108091381387556729249617124615020980570882218414521430123E-11

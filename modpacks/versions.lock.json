@@ -1,0 +1,123 @@
+[
+  {
+    "minecraft": "1.20.1",
+    "slug": "fabric-api",
+    "version": "0.92.12+1.20.1",
+    "version_id": "rvI2dfzR",
+    "project_id": "P7dR8mSH",
+    "filename": "fabric-api-0.92.12+1.20.1.jar",
+    "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/rvI2dfzR/fabric-api-0.92.12%2B1.20.1.jar",
+    "sha512": "de9da2344043b3e9ef9fb7dbfff5f2577b06000c4f73f2a37959a80123141169084cece19133bd299b45feaaa4648bdaca2ea085684888cc8c55cc9134a477ca",
+    "side": "both"
+  },
+  {
+    "minecraft": "1.20.1",
+    "slug": "litematica",
+    "version": "0.15.4",
+    "version_id": "1ZTpW1lr",
+    "project_id": "bEpr0Arc",
+    "filename": "litematica-fabric-1.20.1-0.15.4.jar",
+    "url": "https://cdn.modrinth.com/data/bEpr0Arc/versions/1ZTpW1lr/litematica-fabric-1.20.1-0.15.4.jar",
+    "sha512": "3cf1f2a16997e5a1dcda37b2626595f37873a39e33c254af1a7eda986aa13be74449d56fe706db7f158ed1a047271a48fa705091e5c71e3b0aa28d0d53c7cb01",
+    "side": "client"
+  },
+  {
+    "minecraft": "1.20.1",
+    "slug": "malilib",
+    "version": "0.16.3",
+    "version_id": "V7yLDtJV",
+    "project_id": "GcWjdA9I",
+    "filename": "malilib-fabric-1.20.1-0.16.3.jar",
+    "url": "https://cdn.modrinth.com/data/GcWjdA9I/versions/V7yLDtJV/malilib-fabric-1.20.1-0.16.3.jar",
+    "sha512": "2c16a64cf9af03569618c6bd0359797bbaecec854ac8e8197e9180b1739eb74b6157a9c389a4f8dd8b4aabe52227aafb8d2a6b6b72732ed3c450ff9a0849234c",
+    "side": "client"
+  },
+  {
+    "minecraft": "1.20.1",
+    "slug": "worldedit",
+    "version": "7.2.15",
+    "version_id": "Wrlqaul6",
+    "project_id": "1u6JkXh5",
+    "filename": "worldedit-mod-7.2.15.jar",
+    "url": "https://cdn.modrinth.com/data/1u6JkXh5/versions/Wrlqaul6/worldedit-mod-7.2.15.jar",
+    "sha512": "2c41dcd9a622f948ed5409eecc485018fbf274945bdd1a9c0fdf4c4954f9a47dc311e6e0f9e445180d8b771e4a40947533d67bd66feb4ab8c8f87c2880dba7ef",
+    "side": "both"
+  },
+  {
+    "minecraft": "1.21.1",
+    "slug": "fabric-api",
+    "version": "0.116.18+1.21.1",
+    "version_id": "5SwzqWUu",
+    "project_id": "P7dR8mSH",
+    "filename": "fabric-api-0.116.18+1.21.1.jar",
+    "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/5SwzqWUu/fabric-api-0.116.18%2B1.21.1.jar",
+    "sha512": "9f721c253ae2e9823cb548e8ec132c9928f80a65184e9b8dcfc489a8d632df20cbfea1e65ff8a4333bdb295c41fbe2228b43e4d41c7355d42ed4637a785840a1",
+    "side": "both"
+  },
+  {
+    "minecraft": "1.21.1",
+    "slug": "litematica",
+    "version": "0.19.61",
+    "version_id": "o7i8oi1Z",
+    "project_id": "bEpr0Arc",
+    "filename": "litematica-fabric-1.21-0.19.61.jar",
+    "url": "https://cdn.modrinth.com/data/bEpr0Arc/versions/o7i8oi1Z/litematica-fabric-1.21-0.19.61.jar",
+    "sha512": "626d0b9785afa5cd9915a25089213332b0ae6805e992a15c12292fa174146a354c7fa891e5f834e2eb10c281dbd4b4d69081649b2a83b48f22a66bc99220b328",
+    "side": "client"
+  },
+  {
+    "minecraft": "1.21.1",
+    "slug": "malilib",
+    "version": "0.21.10",
+    "version_id": "C99LEy6r",
+    "project_id": "GcWjdA9I",
+    "filename": "malilib-fabric-1.21-0.21.10.jar",
+    "url": "https://cdn.modrinth.com/data/GcWjdA9I/versions/C99LEy6r/malilib-fabric-1.21-0.21.10.jar",
+    "sha512": "9f70b4605ea23f8c8b519622a6cbdcac6c8934c70bab3b8ea2d5da071a37e71ff74406d2e154c5ba4ebc7772d76e97ae94f5760e71632bd8a11d23ae8ae9a111",
+    "side": "client"
+  },
+  {
+    "minecraft": "1.21.1",
+    "slug": "worldedit",
+    "version": "7.3.8",
+    "version_id": "WTAFvuRx",
+    "project_id": "1u6JkXh5",
+    "filename": "worldedit-mod-7.3.8.jar",
+    "url": "https://cdn.modrinth.com/data/1u6JkXh5/versions/WTAFvuRx/worldedit-mod-7.3.8.jar",
+    "sha512": "e039492df0b486e7ce76d0eaf8cb11eadad2e78220600b8498ab8eef4642a29e310a6bcb4378257553b3639c6d0bc1ebf0f73df3a7a677c6af6baf86716b0bc7",
+    "side": "both"
+  },
+  {
+    "minecraft": "1.21.1",
+    "slug": "autobuild",
+    "version": "2.0.1+1.21.1",
+    "version_id": "wDp2vq7c",
+    "project_id": "wzBO46L7",
+    "filename": "autobuild-2.0.1+1.21.1.jar",
+    "url": "https://cdn.modrinth.com/data/wzBO46L7/versions/wDp2vq7c/autobuild-2.0.1%2B1.21.1.jar",
+    "sha512": "6d9b20ee7f5abeefa723cee6ecad2d5a0ba34ad30cc4904b6848a9ca7b9ebe8504d6b362b168946e25992e667354838957baebf6e9c3b9080813835cafb08262",
+    "side": "both"
+  },
+  {
+    "minecraft": "1.21.1",
+    "slug": "lite2edit",
+    "version": "lite2edit-fabric-1.21.1-1.0",
+    "version_id": "V1sjPtjI",
+    "project_id": "4OeutdDa",
+    "filename": "lite2edit-1.0.jar",
+    "url": "https://cdn.modrinth.com/data/4OeutdDa/versions/V1sjPtjI/lite2edit-1.0.jar",
+    "sha512": "dbcad1609936d12bcbad1f74aef601a951fb0f219a99b41da1c1d60ceb7858b670a36aeb2de616f44d8259157d325ce0087d50fafe20a033d1219c779f093cdd",
+    "side": "both"
+  },
+  {
+    "minecraft": "1.21.1",
+    "slug": "fabric-language-kotlin",
+    "version": "1.14.2+kotlin.2.4.21",
+    "version_id": "SKW1BTL3",
+    "project_id": "Ha28R6CL",
+    "filename": "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar",
+    "url": "https://cdn.modrinth.com/data/Ha28R6CL/versions/SKW1BTL3/fabric-language-kotlin-1.14.2%2Bkotlin.2.4.21.jar",
+    "sha512": "7fb475c4a7e7bdf8d0aca4b5798a58a354c51443d5b1fbde3e8cf34dfbf7191ef4238b5f07d08ec9490ec180b371624523326c3ad45d4ed2b2be541de9407e5d",
+    "side": "both"
+  }
+]

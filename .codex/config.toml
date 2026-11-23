@@ -1,0 +1,11 @@
+# Project-scoped connections. Local credentials are loaded by the wrapper.
+# Start the corresponding isolated game/server before calling these tools.
+[mcp_servers.minecraft_worldapi]
+command = "uv"
+args = ["run", "--no-project", "--with", "PyYAML==6.0.4", "scripts/run_worldapi_mcp.py"]
+startup_timeout_sec = 30
+tool_timeout_sec = 60
+
+[mcp_servers.minecraft_autojs]
+url = "http://127.0.0.1:25586/mcp"
+tool_timeout_sec = 30

@@ -1,0 +1,36 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/autobuild.pw.toml"
+hash = "6257b86bf6f806d2fe4a2aaf54d85f3bf39cc2ea5a5c09da47baf133494debeb"
+metafile = true
+
+[[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "99828bac49b0b4cfe54e28ce96039926bc2916c2d0c9dddc85d7b59f53d4ae8a"
+metafile = true
+
+[[files]]
+file = "mods/fabric-language-kotlin.pw.toml"
+hash = "be008e78334db9009f27421e6beb8abc14e4fb476e9b5a37ad23d34c68c2cdee"
+metafile = true
+
+[[files]]
+file = "mods/lite2edit.pw.toml"
+hash = "feaf73338caf7ec81bd48874ef1e9aafe064343f016905a037127b04cbedb71b"
+metafile = true
+
+[[files]]
+file = "mods/litematica.pw.toml"
+hash = "2916fc9cc4d666b584650ccea8fd5f09300e2d4a554f897b00d974ea9f1b594a"
+metafile = true
+
+[[files]]
+file = "mods/malilib.pw.toml"
+hash = "00a27259d55cddcc50234076f640910b2b5001f82fdf7d9e48f31eb28b890510"
+metafile = true
+
+[[files]]
+file = "mods/worldedit.pw.toml"
+hash = "f56b2d4234ec6630804d75942a6db4e627c652114ecbc63081db11f0aac54c78"
+metafile = true

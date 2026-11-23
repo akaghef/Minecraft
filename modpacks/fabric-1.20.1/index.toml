@@ -1,0 +1,21 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "7aae1345e401205e19c5e76f9d60a8ecbda1c3c159d97c496501b66701204c3b"
+metafile = true
+
+[[files]]
+file = "mods/litematica.pw.toml"
+hash = "2bbae3fbe01713675db75c9b9979630c92f980b17038b05f53c37a7c5e08c34d"
+metafile = true
+
+[[files]]
+file = "mods/malilib.pw.toml"
+hash = "bc8ab011c9f0d1857364926c5c576abc66531e719d37a3add1cb8ad056befed4"
+metafile = true
+
+[[files]]
+file = "mods/worldedit.pw.toml"
+hash = "19a68f4dfde98388abc1909e596359798dc7fe092cf644f7d7fa53123334bd45"
+metafile = true

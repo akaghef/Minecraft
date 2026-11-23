@@ -1,0 +1,8 @@
+# Python 3.12 is required for the published macOS nucleation wheel.
+amaranth[builtin-yosys]==0.5.10
+mcschematic==11.4.4
+nucleation==0.12.4
+mctools==1.4.1
+minecraft-launcher-lib==8.0
+PyYAML==6.0.4
+requests==2.34.2
