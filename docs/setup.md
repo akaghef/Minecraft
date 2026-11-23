@@ -8,6 +8,10 @@
 
 Minecraftは1.20.1。元のModを維持し、観測用AutoJS/Rhinoの依存条件に合わせてFabric Loaderを0.18.4、Fabric APIを0.92.12へ更新した。計算機の起動キーとデバッガーの説明は[既存計算機の起動・観測・照合](calculator-debugger.md)を参照する。
 
+## MATLAB接続
+
+追加のMathWorksサインインを要求しない。このMacのCodex側MATLAB接続は`--matlab-session-mode existing`に固定する。既定の`auto`は既存セッションへ接続できないと新規起動へ移るため使用しない。既存の認証済みR2026aへ接続できることが確認できなければ、Pythonモデルと保存済みMATLAB照合結果を使う。`-batch`で別プロセスを起動しない。接続設定の変更は次の接続から有効であり、現在の接続が認証済みであるという主張ではない。
+
 ## PythonとNode
 
 ```sh

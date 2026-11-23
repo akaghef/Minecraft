@@ -1,0 +1,13 @@
+{
+  "model": "existing Python crosscheck of MATLAB cordic_latest",
+  "new_matlab_execution": false,
+  "assumed_input_degrees": 12.3,
+  "physical_input_verified": false,
+  "scale": 1000000000000,
+  "final_sin_fixed": 213030386282,
+  "final_cos_fixed": 977045574430,
+  "final_sin": "0.213030386282",
+  "final_cos": "0.977045574430",
+  "physical_final_sin": null,
+  "physical_final_cos": null
+}
