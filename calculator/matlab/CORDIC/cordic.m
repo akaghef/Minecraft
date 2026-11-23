@@ -22,7 +22,7 @@ for ii=1:length(theta_d)
     % disp(theta_d(ii))
     % Sin.d;
     % Cos.d;
-    
+
     shiftC=shiftC-1;
     if shiftC==0
         shiftN=shiftN+1;
@@ -47,7 +47,3 @@ for n=7:11
     Cos2=Cos2.shift;
     Sin2=Sin2.shift;
 end
-
-
-
-

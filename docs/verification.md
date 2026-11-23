@@ -41,7 +41,7 @@
 | [yuniko minecraft-mcp-server](https://github.com/yuniko-software/minecraft-mcp-server) 2.0.4 | 22ツール初期化。実サーバーで位置→500 ms前進→位置変化を確認 | 起動直後は接続中。spawnを待って確認 |
 | [minecraft-structure-mcp](https://github.com/WebitroHQ/minecraft-structure-mcp) 0.5.0 | 26ツール、構造作成・石配置・NBT保存・等角描画。PNGも目視確認 | 外部AIへのAPIキー設定・課金は実行していない |
 | [minecraft-plugin-development](https://github.com/github/awesome-copilot/tree/main/skills/minecraft-plugin-development) | 標準skill-installerで導入、SKILL.mdのfrontmatterと参照ファイルを確認 | Paperプラグイン開発用の手順。基準回路環境を変更する理由には使わない |
-| Amaranth / Yosys / Icarus Verilog | Python・Homebrewで導入 | CORDICの制御回路を新設したものではない |
+| Amaranth / Yosys / Icarus Verilog | AmaranthからVerilog生成、Yosys合成、Icarusの4入力組合せを確認 | 二値XORのツール診断であり、CORDICの信号強度・制御回路を検証したものではない |
 | [V2MC](https://github.com/Kenny2github/V2MC) | 公式ソースを取得。公式DFFテストをYosysで合成、上流assemblyからDFF4のNBTを生成 | 完全な配置配線・実ゲームでの順序回路検証は未達。生成NBTだけで合格にしない |
 | [MinecraftHDL](https://github.com/itsFrank/MinecraftHDL) | 配布元・要求環境を確認 | Forge 1.10.2を前提とする旧フロー。今回の版へ混ぜず、V2MCとPython schematic生成を検証対象にした |
 

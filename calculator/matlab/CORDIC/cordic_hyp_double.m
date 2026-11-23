@@ -40,7 +40,3 @@ for n=7:11
     Cos2=Cos2/10;
     Sin2=Sin2/10;
 end
-
-
-
-

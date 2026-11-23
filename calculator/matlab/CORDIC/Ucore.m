@@ -92,4 +92,3 @@ function ret=s2u(c)
         ret.n=ret.Max+ret.n;
     end
 end
-

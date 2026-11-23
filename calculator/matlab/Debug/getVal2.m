@@ -127,7 +127,7 @@ for ii=1:length(c{1})
             d2{jj}(ceil(ii/3),1)=c{jj}(ii,end);
         end
         c2{jj}(floor((ii+offset)/3)+1,mod(ii+offset,3)+1)=datanum;
-        
+
     end
 end
 len=size(c2{1},1);
@@ -174,6 +174,6 @@ function com=makecomT(com,name,T,index)
         end
         str1=[arrayfun(@(n)getSB("Val",n),flip(T.cn)') getSB("time","akaghef")];
         str2=repmat(""" """,size(str1));
-        
+
         com(end+1)=tellLog([textSB("val:"+index,"red") reshape([str2;str1],1,length(str1)*2)]);
 end

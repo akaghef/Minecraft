@@ -29,6 +29,6 @@ end
 for ii=1:size(T,1)
     str(ii)=sprintf("clone %d %d %d %d %d %d %d %d %d\n", ...
             [T{ii,"src"},T{ii,"src"},T{ii,"dst"}]);
-    
+
 end
 writelines(join(str,""),"toSAVE/write_rom.mcfunction")

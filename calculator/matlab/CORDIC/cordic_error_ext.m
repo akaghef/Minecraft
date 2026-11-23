@@ -10,7 +10,7 @@ T=array2table(zeros(M,7),"VariableNames",["T" "S" "C" "SE" "CE" "SE2" "CE2"]);
     Emax=struct("E",0);
 for iter=1:M
     Theta0=90*rand;
-    
+
     Theta=core(Theta0*S/10);
     Theta3=Theta0;
     shiftN=0;
@@ -109,7 +109,7 @@ pd2=fitdist(Eest',"Normal")
 %%
 Eacc=[];
 Theta0=Emax.Theta0;
-    
+
     Theta=core(Theta0*S/10);
     Theta3=Theta0;
     shiftN=0;
@@ -175,6 +175,6 @@ Theta0=Emax.Theta0;
     %%
     plot(Eacc*10^13)
     sum(reshape(sgn2,[9,6]))
-    hold on 
+    hold on
     plot(diff(Eacc*10^13))
     yline(0)

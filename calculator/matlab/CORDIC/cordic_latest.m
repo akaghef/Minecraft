@@ -66,7 +66,7 @@ function out=shiftTime(in)
         out=1;
     elseif in<5
         out=2;
-    else 
+    else
         out=3;
     end
 end

@@ -19,5 +19,3 @@ for ii=0:N-2
 end
 Oans=core(Ai/Bi*S);
 errorN=O.n-Oans.n;
-
-

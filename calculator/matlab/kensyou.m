@@ -1,11 +1,11 @@
 addpath CORDIC/
 addpath Debug/
-%% 
+%%
 % calculate CORDIC
 
 Theta0=12.3;
 cordic_latest
-%% 
+%%
 % getVal2.m  read log file
 
 logFilePath="/Users/nisimoriyuuya/MinecraftUser/Fabric2/logs/latest.log";
@@ -42,7 +42,7 @@ for ii=1:length(c{1})
             d2{jj}(ceil(ii/3),1)=c{jj}(ii,end);
         end
         c2{jj}(floor((ii+offset)/3)+1,mod(ii+offset,3)+1)=datanum;
-        
+
     end
 end
 len=size(c2{1},1);

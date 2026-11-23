@@ -45,7 +45,7 @@ for ii=1:13
     commandL(end+1)=CtoSB(T.cn(ii),T{ii,"c"});
 end
 for ii=1:13
-    commandL(end+1)=ProdSB(T.cn(ii),T.bn(ii)); 
+    commandL(end+1)=ProdSB(T.cn(ii),T.bn(ii));
 end
 for ii=1:7
     commandL(end+1)=AddSB("s1",T.cn(ii));

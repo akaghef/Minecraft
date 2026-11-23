@@ -68,6 +68,3 @@ savefig("toSAVE/sin_error_normpdf.fig")
 histfit(T.SE)
 pd=fitdist(T.SE,"Normal");
 mean(sqrt(T.S.^2+T.C.^2)-1)
-
-
-

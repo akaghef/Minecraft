@@ -15,4 +15,3 @@ function ret = fillnan(a, b)
 end
 
 % Example usage:
-

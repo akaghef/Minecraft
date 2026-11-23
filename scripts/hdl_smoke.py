@@ -10,7 +10,9 @@ from amaranth.back import verilog
 
 class XorFixture(Elaboratable):
     def __init__(self):
-        self.a, self.b, self.q = Signal(), Signal(), Signal()
+        self.a = Signal(name="a")
+        self.b = Signal(name="b")
+        self.q = Signal(name="q")
 
     def elaborate(self, platform):
         m = Module()
