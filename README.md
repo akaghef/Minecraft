@@ -32,6 +32,7 @@ uv pip install -r requirements.txt
 clang++ -O2 -std=c++17 calculator/audit/audit.cpp -o build/cordic-audit
 build/cordic-audit
 .venv/bin/python calculator/audit/crosscheck.py
+.venv/bin/python calculator/audit/check_translation.py
 ```
 
 schematic診断は36ブロックの赤石粉の配線を生成する。`build/schematic-smoke/dust-line.schem`をWorldEditで貼り付け、Litematicaで照合する。これはツールの診断用で、CORDIC回路を生成したものではない。
@@ -54,6 +55,8 @@ schematic診断は36ブロックの赤石粉の配線を生成する。`build/sc
 ## 数値モデルと実回路
 
 誤差監査は保存された固定小数点数値モデルの検証であり、赤石回路の配線やタイミングを検証したものではない。従来の「乱数サンプルの最大誤差」と全入力範囲の探索を区別する。監査の浮動小数点ガードも、形式的な区間演算証明とは区別する。
+
+C++版の数値演算は、独立したDecimal・整数モデルと境界値・乱数入力で照合する。コピーした実回路でも、リセット完了を待つ手順により、読み込まれた12.3度相当の正弦・余弦がモデルと一致した。[実回路の観測と結果](docs/calculator-debugger.md)、[C++翻訳の確認結果](verification/calculator-cpp-translation.json)を参照。
 
 既存CORDIC回路の自動配置と出力照合には、実回路のschematicと入力・出力位置、リセット・クロック・完了条件の対応付けが必要。数値モデルからブロック配置が一意に定まるとは扱わない。
 
