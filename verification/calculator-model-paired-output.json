@@ -8,6 +8,18 @@
   "final_cos_fixed": 977045574430,
   "final_sin": "0.213030386282",
   "final_cos": "0.977045574430",
-  "physical_final_sin": null,
-  "physical_final_cos": null
+  "physical_final_sin": "0.213030386282",
+  "physical_final_cos": "0.977045574430",
+  "observed_input_degrees": 12.3,
+  "physical_input_observed_in_theta_channel": true,
+  "physical_source": "calculator-reset-confirmed-output.json",
+  "comparison_scope": "Observed loaded theta of 12.3 degrees, using original clock/phase decoding and reset-completion protocol",
+  "sin_difference_fixed": 0,
+  "cos_difference_fixed": 0,
+  "outputs_match": true,
+  "repeat_source": "calculator-reset-repeat-output.json",
+  "physical_loaded_theta_verified": true,
+  "external_input_configuration_identified": false,
+  "matching_repeated_runs": 2,
+  "failed_initialization_case": "calculator-physical-final-output.json"
 }

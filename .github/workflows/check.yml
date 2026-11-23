@@ -18,3 +18,4 @@ jobs:
       - run: g++ -O2 -std=c++17 calculator/audit/audit.cpp -o build/cordic-audit
       - run: build/cordic-audit > build/cordic-audit-result.txt
       - run: python calculator/audit/crosscheck.py
+      - run: python calculator/audit/check_translation.py

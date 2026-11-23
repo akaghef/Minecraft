@@ -32,10 +32,14 @@ def evaluate(code, side="server", url=None):
 
 if __name__ == "__main__":
     import argparse
+    from pathlib import Path
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("code", nargs="?")
+    source = parser.add_mutually_exclusive_group()
+    source.add_argument("code", nargs="?")
+    source.add_argument("--script", type=Path)
     parser.add_argument("--side", default="server", choices=["client", "server"])
     parser.add_argument("--url")
     args = parser.parse_args()
-    result = evaluate(args.code, args.side, args.url) if args.code else call("status", url=args.url)
+    code = args.script.read_text() if args.script else args.code
+    result = evaluate(code, args.side, args.url) if code else call("status", url=args.url)
     print(json.dumps(result, ensure_ascii=False, indent=2))

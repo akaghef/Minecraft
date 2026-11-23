@@ -1,0 +1,22 @@
+{
+  "scope": "Compiled C++ numerical translation, not circuit physics",
+  "reference": "Independent Decimal constants and integer updates in crosscheck.py",
+  "input_degrees_range": [
+    0,
+    90
+  ],
+  "angle_scale": 100000000000,
+  "cases_per_variant": 2247,
+  "variants": [
+    "cordic_latest",
+    "cordic_error"
+  ],
+  "mismatches": 0,
+  "cases_distinguishing_variants": 292,
+  "undefined_behavior_sanitizer": "passed",
+  "input_12_3": {
+    "sin_fixed": 213030386282,
+    "cos_fixed": 977045574430,
+    "scale": 1000000000000
+  }
+}

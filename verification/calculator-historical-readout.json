@@ -1,0 +1,59 @@
+{
+  "kind": "Historical game log, distinct from the current run",
+  "source_log": "2024-05-31-1.log.gz",
+  "date": "2024-05-31",
+  "segment_after_start_marker": 6,
+  "valid_complete_bundles": 752,
+  "clock_step": 20,
+  "period_clock_units": 60,
+  "input_theta_sample": {
+    "clock": 560,
+    "phase": 0,
+    "value": 1230000000000,
+    "source_line": 6689
+  },
+  "last_complete_cycle": 255,
+  "endpoint_samples": [
+    {
+      "clock": 15260,
+      "phase": 0,
+      "value": 29,
+      "source_line": 11170
+    },
+    {
+      "clock": 15280,
+      "phase": 1,
+      "value": 213030386686,
+      "source_line": 11177
+    },
+    {
+      "clock": 15300,
+      "phase": 2,
+      "value": 977045574748,
+      "source_line": 11182
+    }
+  ],
+  "sin_fixed": 213030386686,
+  "cos_fixed": 977045574748,
+  "value_scale": 1000000000000,
+  "sin": "0.213030386686",
+  "cos": "0.977045574748",
+  "terminal_timing_events": [
+    [
+      7,
+      15280
+    ],
+    [
+      6,
+      15280
+    ],
+    [
+      2,
+      15320
+    ],
+    [
+      8,
+      15330
+    ]
+  ]
+}

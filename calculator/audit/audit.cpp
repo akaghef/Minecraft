@@ -164,4 +164,5 @@ int main() {
     std::setvbuf(stdout,nullptr,_IONBF,0);
     Audit(true).run();
     Audit(false).run();
+    return 0;
 }
