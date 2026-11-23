@@ -1,7 +1,14 @@
 {
-  "kind": "Physical first coarse update; not full CORDIC acceptance",
+  "kind": "Conditional first coarse comparison; physical input source and phase unverified",
   "input_angle_fixed": 1230000000000,
   "angle_scale": 100000000000,
+  "input_evidence": {
+    "external_source_verified": false,
+    "register_role_verified": false,
+    "input_written_by_this_run": false,
+    "observed_m1_at_initial_pattern": 1230000000000
+  },
+  "phase_independently_verified": false,
   "value_scale": 1000000000000,
   "initial_gain_fixed": 627355837245,
   "initial_state_observed": true,

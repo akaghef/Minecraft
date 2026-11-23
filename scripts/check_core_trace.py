@@ -55,8 +55,14 @@ def compare(rows, input_tick):
     observed = {"theta_unsigned": values[boundary],
                 "sin": values[boundary + width],
                 "cos": values[boundary + 2 * width]}
-    return {"kind": "Physical first coarse update; not full CORDIC acceptance",
+    m1 = rows[first]["regs"]["M1"]
+    return {"kind": "Conditional first coarse comparison; physical input source and phase unverified",
             "input_angle_fixed": input_tick, "angle_scale": 10**11,
+            "input_evidence": {"external_source_verified": False,
+                               "register_role_verified": False,
+                               "input_written_by_this_run": False,
+                               "observed_m1_at_initial_pattern": sum(int(v) * 10**i for i, v in enumerate(m1))},
+            "phase_independently_verified": False,
             "value_scale": 10**12, "initial_gain_fixed": start,
             "initial_state_observed": True, "phase_width_game_ticks": width,
             "initial_theta_age": first, "first_update_age": boundary,
