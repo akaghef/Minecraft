@@ -2,6 +2,8 @@
 
 Print locations only: never print a matched contact or secret.
 """
+import io
+import logging
 import re
 import subprocess
 import sys
@@ -13,7 +15,51 @@ SECRET = re.compile(rb"(?:gh[pousr]_[A-Za-z0-9]{20,}|sk-[A-Za-z0-9]{24,}|-----BE
 FORBIDDEN = {"launcher_accounts.json", "launcher_profiles.json", "servers.dat", "usercache.json", ".env"}
 
 
+def pdf_content(data):
+    """Decode textual PDF content; compressed image/font bytes are not text."""
+    from pypdf import PdfReader
+    from pypdf.generic import (
+        ArrayObject, ByteStringObject, DictionaryObject, IndirectObject,
+        StreamObject, TextStringObject,
+    )
+    logging.getLogger("pypdf").setLevel(logging.ERROR)
+    reader = PdfReader(io.BytesIO(data))
+    if reader.is_encrypted:
+        raise ValueError("encrypted PDF cannot be inspected")
+    if list(reader.attachments):
+        raise ValueError("PDF attachments require separate review")
+    text = [page.extract_text() or "" for page in reader.pages]
+    seen = set()
+
+    def visit(value):
+        if isinstance(value, IndirectObject):
+            key = (value.idnum, value.generation)
+            if key in seen:
+                return
+            seen.add(key)
+            visit(value.get_object())
+        elif isinstance(value, TextStringObject):
+            text.append(str(value))
+        elif isinstance(value, ByteStringObject):
+            text.append(bytes(value).decode("utf-8", errors="replace"))
+        elif isinstance(value, DictionaryObject):
+            if isinstance(value, StreamObject) and value.get("/Type") == "/Metadata":
+                text.append(value.get_data().decode("utf-8", errors="replace"))
+            for child in value.values():
+                visit(child)
+        elif isinstance(value, ArrayObject):
+            for child in value:
+                visit(child)
+    visit(reader.trailer)
+    return "\n".join(text).encode("utf-8")
+
+
 def problems(data, label):
+    if data.startswith(b"%PDF-") or label.lower().endswith(".pdf"):
+        try:
+            data = pdf_content(data)
+        except Exception:
+            return [f"{label}: PDF could not be fully decoded for privacy inspection"]
     return [f"{label}: {kind}" for kind, pattern in [("email", EMAIL), ("telephone", PHONE), ("credential", SECRET)] if pattern.search(data)]
 
 

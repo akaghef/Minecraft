@@ -14,6 +14,7 @@ Project Red、Simply Redstone Systems、Automated Redstoneなどの追加回路�
 |---|---|
 | `calculator/matlab/` | 復元した数値モデル・ROM出力・観測コード。元ファイルは保存 |
 | `calculator/audit/` | 固定小数点モデルのC++誤差探索とPython多倍長照合 |
+| `docs/reference/` | 三角関数計算機の回路・制御・観測に関する設計資料 |
 | `modpacks/` | packwizの配布元・版・ハッシュ。Mod本体は含まない |
 | `scripts/` | 既存ツールの薄い呼び出しと、再実行可能な診断 |
 | `docs/verification.md` | 導入結果、実動作の範囲、失敗・未検証 |
@@ -57,6 +58,8 @@ schematic診断は36ブロックの赤石粉の配線を生成する。`build/sc
 誤差監査は保存された固定小数点数値モデルの検証であり、赤石回路の配線やタイミングを検証したものではない。従来の「乱数サンプルの最大誤差」と全入力範囲の探索を区別する。監査の浮動小数点ガードも、形式的な区間演算証明とは区別する。
 
 C++版の数値演算は、独立したDecimal・整数モデルと境界値・乱数入力で照合する。コピーした実回路でも、リセット完了を待つ手順により、読み込まれた12.3度相当の正弦・余弦がモデルと一致した。[実回路の観測と結果](docs/calculator-debugger.md)、[C++翻訳の確認結果](verification/calculator-cpp-translation.json)を参照。
+
+[三角関数計算機forJAVA（設計資料PDF）](docs/reference/三角関数計算機forJAVA.pdf)には、回路構成、信号強度による演算、制御・パイプライン、デバッガーの設計メモを収録する。
 
 既存CORDIC回路の自動配置と出力照合には、実回路のschematicと入力・出力位置、リセット・クロック・完了条件の対応付けが必要。数値モデルからブロック配置が一意に定まるとは扱わない。
 
