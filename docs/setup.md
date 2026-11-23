@@ -2,6 +2,12 @@
 
 以下のパスはすべてリポジトリルートを基準にする。ゲーム・認証・ワールドは公開ファイルに含まれない。
 
+## ランチャーのmain
+
+このMacの`main`起動構成は`.local/instances/calculator-verification/`を使用する。元の4ワールドのコピーがあり、原本の`MinecraftUser/Fabric2/saves/`を起動先にしない。既存構成の古いホームディレクトリ指定による`INVALID_CONFIG`を修正して、ランチャーから起動できることを確認した。
+
+Minecraftは1.20.1。元のModを維持し、観測用AutoJS/Rhinoの依存条件に合わせてFabric Loaderを0.18.4、Fabric APIを0.92.12へ更新した。計算機の起動キーとデバッガーの説明は[既存計算機の起動・観測・照合](calculator-debugger.md)を参照する。
+
 ## PythonとNode
 
 ```sh

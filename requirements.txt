@@ -5,4 +5,5 @@ nucleation==0.12.4
 mctools==1.4.1
 minecraft-launcher-lib==8.0
 PyYAML==6.0.4
+NBT==1.5.1
 requests==2.34.2

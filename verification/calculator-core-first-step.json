@@ -1,0 +1,27 @@
+{
+  "kind": "Physical first coarse update; not full CORDIC acceptance",
+  "input_angle_fixed": 1230000000000,
+  "angle_scale": 100000000000,
+  "value_scale": 1000000000000,
+  "initial_gain_fixed": 627355837245,
+  "initial_state_observed": true,
+  "phase_width_game_ticks": 4,
+  "initial_theta_age": 236,
+  "first_update_age": 356,
+  "expected": {
+    "theta_unsigned": 8910140948635,
+    "sin": 376413502349,
+    "cos": 878298172141
+  },
+  "observed": {
+    "theta_unsigned": 8910140948635,
+    "sin": 602261603757,
+    "cos": 652450070733
+  },
+  "matches": {
+    "theta_unsigned": true,
+    "sin": false,
+    "cos": false
+  },
+  "passed": false
+}

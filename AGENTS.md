@@ -11,3 +11,9 @@ Keep installation binaries, game instances, account files, tokens, logs, worlds 
 Use upstream tools without replacing their internals. Record blocked and untested capabilities honestly. Downloaded is not loaded; loaded is not functionally verified.
 
 AutoJS is installed separately for local debugging. Do not include it in exported modpacks. Keep bridges on loopback. Preserve original worlds and MATLAB sources.
+
+Before recommending or launching a calculator profile, inspect its actual game directory and version. A matching display name/version does not prove the profile is usable. Operate only on a verified world copy in an isolated instance; record source hashes before copying, verify the copy, and check source hashes after the run. Never launch the original saves directory for verification. Keep the unmodified copy and source manifest in ignored local storage. A launcher repair is intermediate: resume the authorized circuit verification after confirming launch.
+
+Keep routine integrity checks internal. Do not report hash values or successful hash comparisons unless explicitly requested. Report an integrity check only when it finds a problem that affects the task. Progress and completion messages should state the user-visible result and any material failure or limitation.
+
+AutoJS.command does not propagate a rejected Minecraft command as a tool failure. Inspect the game log and the resulting state. In a 1.20.1 integrated server, use the actual saveAll API for persistence; do not assume the dedicated-server save-all command exists. Verify saved command-block changes by rereading the region files before claiming the debugger repair is persistent.

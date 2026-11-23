@@ -36,7 +36,7 @@ t=(t-t0)/2;
 
 %%
 
-timerLog=@(tag)disp("/tellraw @p [{""text"":""time:"+tag+""",""color"":""yellow""},"" "",{""score"":{""name"":""akaghef"",""objective"":""time""}}]");
+timerLog=@(tag)disp("/tellraw @p [{""text"":""time:"+tag+""",""color"":""yellow""},"" "",{""score"":{""name"":""#clock"",""objective"":""time""}}]");
 timerLog("a")
 %%
 

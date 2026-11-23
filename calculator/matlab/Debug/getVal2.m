@@ -68,7 +68,7 @@ commandL=makecomL(commandL,"M2",T);
 commandL=makecomL(commandL,"M4",T);
 commandL=makecomL(commandL,"I",T);
 
-commandL(end+1)="scoreboard players operation t Val = akaghef time";
+commandL(end+1)="scoreboard players operation t Val = #clock time";
 commandL(end+1)=CtoSB("sgn",[106 -30 71],1);
 %tell
 commandT=makecomT(commandT,"A",T,1);
@@ -172,7 +172,7 @@ function com=makecomT(com,name,T,index)
         for ii=1:13
             com(end+1)=CtoSB(T.cn(ii),T{ii,name},1);
         end
-        str1=[arrayfun(@(n)getSB("Val",n),flip(T.cn)') getSB("time","akaghef")];
+        str1=[arrayfun(@(n)getSB("Val",n),flip(T.cn)') getSB("time","#clock")];
         str2=repmat(""" """,size(str1));
 
         com(end+1)=tellLog([textSB("val:"+index,"red") reshape([str2;str1],1,length(str1)*2)]);

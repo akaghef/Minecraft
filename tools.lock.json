@@ -4,7 +4,8 @@
     "nucleation": "0.12.4",
     "mcschematic": "11.4.4",
     "mctools": "1.4.1",
-    "minecraft-structure-mcp": "0.5.0"
+    "minecraft-structure-mcp": "0.5.0",
+    "NBT": "1.5.1"
   },
   "npm": {
     "minecraft-agent": "1.0.8",
